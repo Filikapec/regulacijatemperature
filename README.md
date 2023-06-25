@@ -1,2 +1,2 @@
-# regulacijatemperature
+# Regulacija Temperature
 Source Code
