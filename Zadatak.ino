@@ -39,11 +39,8 @@ void loop() {
   }
   if((temp > tempTar) && (temp <= tempMax)) {
     kulerSpeed = int(abs(tempTar-temp)*33);
-    if(kulerSpeed < 20 && kulerSpeed > 15) {
-      analogWrite(kulerPin, 80);
-      delay(100);
-    }
-    if(kulerSpeed<3) {
+    
+    if(kulerSpeed<20) {
       kulerSpeed = 0;
       analogWrite(kulerPin, kulerSpeed);
       digitalWrite(kulerPin, LOW);
